@@ -12,6 +12,10 @@
 		D915191C1C21B1F000DC5186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D915191A1C21B1F000DC5186 /* Main.storyboard */; };
 		D915191E1C21B1F000DC5186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D915191D1C21B1F000DC5186 /* Assets.xcassets */; };
 		D91519211C21B1F000DC5186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D915191F1C21B1F000DC5186 /* LaunchScreen.storyboard */; };
+		D915192A1C21B2D900DC5186 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91519291C21B2D900DC5186 /* Post.swift */; };
+		D915192D1C21D80F00DC5186 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D915192C1C21D80F00DC5186 /* PostCell.swift */; };
+		D91519321C22078200DC5186 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91519311C22078200DC5186 /* AddPostVC.swift */; };
+		D92232EE1C225A9F0062618D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92232ED1C225A9F0062618D /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		D915191D1C21B1F000DC5186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D91519201C21B1F000DC5186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D91519221C21B1F000DC5186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D91519291C21B2D900DC5186 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D915192C1C21D80F00DC5186 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		D91519311C22078200DC5186 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		D92232ED1C225A9F0062618D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,51 @@
 		D91519151C21B1EF00DC5186 /* my-hood-taydev */ = {
 			isa = PBXGroup;
 			children = (
+				D92232EC1C225A710062618D /* Services */,
+				D91519281C21B25700DC5186 /* Model */,
+				D915192B1C21D78000DC5186 /* View */,
+				D915192E1C22058800DC5186 /* Controller */,
 				D91519161C21B1EF00DC5186 /* AppDelegate.swift */,
-				D91519181C21B1EF00DC5186 /* ViewController.swift */,
-				D915191A1C21B1F000DC5186 /* Main.storyboard */,
 				D915191D1C21B1F000DC5186 /* Assets.xcassets */,
-				D915191F1C21B1F000DC5186 /* LaunchScreen.storyboard */,
 				D91519221C21B1F000DC5186 /* Info.plist */,
 			);
 			path = "my-hood-taydev";
+			sourceTree = "<group>";
+		};
+		D91519281C21B25700DC5186 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D91519291C21B2D900DC5186 /* Post.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D915192B1C21D78000DC5186 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D915191F1C21B1F000DC5186 /* LaunchScreen.storyboard */,
+				D915191A1C21B1F000DC5186 /* Main.storyboard */,
+				D915192C1C21D80F00DC5186 /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D915192E1C22058800DC5186 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D91519181C21B1EF00DC5186 /* ViewController.swift */,
+				D91519311C22078200DC5186 /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D92232EC1C225A710062618D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D92232ED1C225A9F0062618D /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +141,7 @@
 				TargetAttributes = {
 					D91519121C21B1EF00DC5186 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = TNQY9Q2S79;
 					};
 				};
 			};
@@ -135,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D915192A1C21B2D900DC5186 /* Post.swift in Sources */,
 				D91519191C21B1EF00DC5186 /* ViewController.swift in Sources */,
+				D91519321C22078200DC5186 /* AddPostVC.swift in Sources */,
+				D92232EE1C225A9F0062618D /* DataService.swift in Sources */,
 				D91519171C21B1EF00DC5186 /* AppDelegate.swift in Sources */,
+				D915192D1C21D80F00DC5186 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +299,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "my-hood-taydev/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.lestaylor.my-hood-taydev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +313,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "my-hood-taydev/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.lestaylor.my-hood-taydev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +342,7 @@
 				D91519271C21B1F000DC5186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
